@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+    <link href="{% static 'css/listar.css' %}" rel="stylesheet"> {% endblock %}
+{% block titleContainer %}
+    <form action="{% url 'adm.usuario.listar' %}" method="POST">
+        {% csrf_token %}
+        <label class="h4" for="id_query">Usuarios</label>
+            <a href="{% url 'adm.usuario.crear' %}" class="btn btn-primary"
+                                                            style="margin-left:10px;padding-top: 4px;height: 30px;display: inline-flex;">
+                <strong>Crear <i style="padding-top: 2px" class="glyphicon glyphicon-plus-sign"></i></strong>
+            </a>
+            {% if mensaje %}
+                <span class="alert alert-success mensaje" style="margin-left: 10px;padding: 5px 10px 5px 5px;">
+                    <i class="glyphicon glyphicon-ok-sign" style="padding: 5px;"></i>{{ mensaje }}.</span>
+            {% endif %}
+
+        <div class="input-group pull-right" style="width: 40%">
+
+            <input id="id_query" type="text" name="query" value="{{ query }}" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+        </div>
+
+        <button type="button" class="btn btn-default pull-right" data-toggle="collapse" href="#sort"><i
+                class="glyphicon glyphicon-sort"></i></button>
+    <div class="input-group pull-right" style="display: inline-flex">
+            <input id="id_activos" type="checkbox" name="activos" style="padding: 5px;margin-top: 10px;margin-right: 5px">
+            <label style="margin: 3px;margin-right: 10px" for="id_activos">Filtrar Inactivos</label>
+            </div>
+        <div id="sort" hidden>
+            <div class="btn-group" data-toggle="buttons" style=";width: 100%">
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="nombre" value="nombre"> Nombre <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="fecha" value="apellido"> Apellido <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="costo" value="telefono"> Telefono <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="lider" value="documento"> Documento <i
+
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                </label>
+
+                <div class="alert alert-info" style="margin-left: 10px;padding: 3px 10px 3px 3px;display: inline-flex">
+                    <i class="glyphicon glyphicon-info-sign" style="padding: 5px"></i> Seleccione una opcion y presione
+                    <i class="glyphicon glyphicon-search" style="padding: 5px"></i></div>
+
+            </div>
+
+        </div>
+        {#        <div class="input-group">#}
+        {#            <input id="id_query" type="text" name="query" class="form-control" value="{{  query }}">#}
+        {#            <span class="input-group-btn">#}
+        {#                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>#}
+        {#            </span>#}
+        {#        </div>#}
+    </form>
+{% endblock %}
+{% block content %}
+
+    <div class="task-list" id="tasks">
+        <ul class="list-group tasks">
+
+            <li class="list-group-item " data-user-id="{{ usuario.id_usuario }}">
+                    <span class="text-truncate"
+                          style="padding-right: 10px;width: 15%"><strong>Nombre Usuario</strong></span>
+                             <span class="description text-truncate"
+                                   style="width: 17%; "> <strong>Nombre</strong></span>
+                            <span class="description text-truncate"
+                                  style="width: 18%; "> <strong>Apellido</strong></span>
+                            <span class="description text-truncate   hidden-sm hidden-xs"
+                                  style="width: 15%;"> <strong>Telefono</strong></span>
+                            <span class="description text-truncate  hidden-sm hidden-xs hidden-md"
+                                  style="width: 18%;"> <strong> Documento</strong> </span>
+            </li>
+
+            {% for usuario in usuarios %}
+                <script>console.log('active: ' + '{{  usuario.is_active}}')</script>
+                <li class="list-group-item proyect {% if usuario.is_active == True %}item-success {% else %} completed {% endif %}"
+                    {% if usuario.is_active == False %}data-toggle="tooltip" data-placement="top"
+                    title="Este usuario esta inactivo." {% endif %} data-user-id="{{ usuario.id_usuario }}">
+
+                    <i class="glyphicon glyphicon-user pull-left"
+                       style="padding-top: 5px;color: darkgray; margin-right: 4px"></i>
+
+                    <span class="pull-right" style="width: 100px">
+                        {% if usuario.is_active %}
+
+
+
+                        <a href="{% url 'adm.usuario.eliminar' usuario.id_usuario %}"
+                           class="pull-right" data-toggle="tooltip" data-placement="top"
+                            title="Desactivar Usuario."
+                           style="margin-right: 7px; "><i class="glyphicon glyphicon-remove text-danger"></i> </a>
+                            <a href="{% url 'adm.rol.asignar' usuario.id_usuario %}"
+                           class="pull-right" data-toggle="tooltip" data-placement="top"
+                            title="Asignar Roles."
+                           style="margin-right: 7px"><i class="glyphicon glyphicon-lock text-warning"></i> </a>
+                            <a href="{% url 'adm.usuario.modificar' usuario.id_usuario %}"
+                           class="pull-right" data-toggle="tooltip" data-placement="top"
+                            title="Modificar usuario."
+                           style="margin-right: 7px"><i class="glyphicon glyphicon-pencil text-info"></i> </a>
+                            <a href="{% url 'adm.usuario.consultar' usuario.id_usuario %}"
+                           class="pull-right" data-toggle="tooltip" data-placement="top"
+                            title="Consultar Usuario."
+                           style="margin-right: 7px"><i class="glyphicon glyphicon-info-sign"></i> </a>
+                        {% else %}
+                        <a href="{% url 'adm.usuario.eliminar' usuario.id_usuario %}"
+                           class="pull-right" data-toggle="tooltip" data-placement="top"
+                            title="Activar Usuario."
+                           style="margin-right: 7px; "><i class="glyphicon glyphicon-ok text-success"></i> </a>
+                        {% endif %}
+
+                    </span>
+
+
+                    <span class="text-truncate title"
+                          style="padding-right: 10px;width: 15%"><strong>{{ usuario.nombre_usuario }}</strong>
+
+                    </span>
+
+                            <span class="description text-truncate"
+                                  style="color: #808080; width: 17%; "> {{ usuario.nombre }}</span>
+                            <span class="description text-truncate"
+                                  style="color: #808080; width: 18%; "> {{ usuario.apellido }}</span>
+                            <span class="description text-truncate hidden-sm hidden-xs"
+                                  style="width: 15%; padding-left: 10px ">  {{ usuario.telefono }}</span>
+                            <span class="description text-truncate hidden-sm hidden-xs hidden-md"
+                                  style="width: 18%; padding-left: 10px ">  {{ usuario.documento }}</span>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery_1.11.0.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+        $(function(){
+            $('.mensaje').delay(3000).fadeOut('slow');
+        })
+    </script>
+    {% endblock %}
+
+
+{% block footer %}
+    <div class="panel-footer">
+        <ul class="pager" style="margin: 0px">
+            {% if usuarios.has_previous %}
+                <li class=""><a href="?page={{ usuarios.previous_page_number }}">Anterior</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Anterior</a></li>
+            {% endif %}
+            <li>&nbsp;Pagina {{ usuarios.number }} de {{ usuarios.paginator.num_pages }}&nbsp;</li>
+            {% if usuarios.has_next %}
+                <li class=" "><a href="?page={{ usuarios.next_page_number }}">Siguiente</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Siguiente</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block styles %} <link href="{% static 'css/crear.css' %}" rel="stylesheet"> {% endblock %}
+{% block titleContainer %}<h3>{% if modificar %}Modificar Rol{% elif consultar %}Consultar Rol{% else %}Nuevo Rol{% endif %} </h3>{% endblock %}
+{% block content %}}
+<br>
+    <br>
+    <br>
+
+    <div class="panel panel-default center-block" style="width: 700px">
+        <div class="panel-body">
+            <form role="form" autocomplete="on" method="post" action=".">
+                {% csrf_token %}
+                {{ form.management_form }}
+                <input id="id_estado" name="estado" type="hidden" value="1">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5">
+                            <label class="control-label pull-right" for="id_nombre">Nombre <i class="glyphicon glyphicon-asterisk text-danger" style="font-size: xx-small"></i> </label>
+                        </div>
+                    <div class="col-lg-6">
+                        <input{% if modificar or consultar %} disabled{% endif %} id="id_nombre" class="form-control" name="nombre" type="text" placeholder="Nombre" value="{% if form.nombre.value != None %}{{ form.nombre.value }}{% endif %}">
+                            <span class="text-danger">{{ form.nombre.errors }}</span>
+                    </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5">
+                            <label class="control-label pull-right" for="id_descripcion">Descripcion </label>
+                        </div>
+                    <div class="col-lg-6">
+                        <input {% if consultar %} disabled{% endif %} id="id_descripcion" class="form-control" name="descripcion" type="" placeholder="Descripcion" value="{% if form.descripcion.value != None %}{{ form.descripcion.value }}{% endif %}    ">
+                    </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                    {% if not consultar %}
+                    <div class="col-lg-6">
+                        <button class="btn btn-lg btn-success btn-block" type="submit">{% if modificar %}Modificar{% else %}Crear{% endif %}</button>
+                    </div>
+                    {% endif %}
+                    <div class="col-lg-6">
+
+                        <button class="btn btn-lg btn-link btn-block" onclick="window.location.href='/'" type="button">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="application/javascript">
+        function invalid(value, obj,text) {
+            console.log('invalid');
+            console.log($(obj));
+            $this = $(obj);
+
+            if (value) {
+                $this.parent().addClass('has-warning has-feedback');
+
+            }
+            else {
+                $this.parent().removeClass('has-warning has-feedback');
+            }
+            try{
+                obj.setCustomValidity(text);
+            }catch (e){
+
+            }
+        }
+    </script>
+    <br>
+{% endblock %}

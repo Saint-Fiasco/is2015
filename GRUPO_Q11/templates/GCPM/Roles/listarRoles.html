@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+    <link href="{% static 'css/listar.css' %}" rel="stylesheet"> {% endblock %}
+{% block titleContainer %}
+    <form action="{% url 'adm.usuario.listar' %}" method="POST">
+        {% csrf_token %}
+        <label class="h4" for="id_query">Roles {% if usuario %}de {{ usuario.nombre }}{% endif %}</label>
+        <a href="{% url 'adm.rol.crear' %}" class="btn btn-primary" style="margin-left:10px;padding-top: 4px;height: 30px">
+        <strong>Crear <i style="padding-top: 2px" class="glyphicon glyphicon-plus-sign"></i></strong></a>
+
+                        {% if not id_usuario %}
+        <div class="input-group pull-right" style="width: 40%">
+
+            <input id="id_query" type="text" name="query" value="{{ query }}" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+
+                        </button>
+                    </span>
+        </div>
+        <button type="button" class="btn btn-default pull-right" data-toggle="collapse" href="#sort"><i
+                class="glyphicon glyphicon-sort"></i></button>
+
+        <div class="row">
+            {% if id_usuario %}
+            <input id="asignarBtn" class="btn btn-primary" type="submit" name="Asignar Usuario" value="Asignar Usuario">
+            {% endif %}
+        </div>
+        <div id="sort" hidden>
+            <div class="btn-group" data-toggle="buttons" style=";width: 100%">
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="nombre" value="nombre"> Nombre <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="estado" value="estado"> Descripcion <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+
+                <div class="alert alert-info" style="margin-left: 10px;padding: 3px 10px 3px 3px;display: inline-flex">
+                    <i class="glyphicon glyphicon-info-sign" style="padding: 5px"></i> Seleccione una opcion y presione
+                    <i class="glyphicon glyphicon-search" style="padding: 5px"></i></div>
+
+            </div>
+        </div>
+        {#        <div class="input-group">#}
+        {#            <input id="id_query" type="text" name="query" class="form-control" value="{{  query }}">#}
+        {#            <span class="input-group-btn">#}
+        {#                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>#}
+        {#            </span>#}
+        {#        </div>#}
+
+        {% endif %}
+    </form>
+{% endblock %}
+{% block content %}
+
+    <div class="task-list" id="tasks">
+        <form role="form" autocomplete="on" method="post" action="adm/rol/asignar_rol_usuario">
+        <ul class="list-group tasks">
+
+            {% for rol in roles %}
+                <li class="list-group-item proyect {% if rol.is_active == True %}item-success {% else %} completed {% endif %}" data-user-id="{{ rol.id_rol }}" {% if rol.is_active == False %}data-toggle="tooltip" data-placement="top" title="Este rol esta inactivo." {% endif %}>
+                    {% if id_usuario %}
+                    <input type="checkbox" value="{{rol.id}} "class="pull-left asignar-check" ><a href="#"
+                                                                                                 class="pull-right"
+                                                                                                 style="width: 100px">
+                    {% endif %}
+                    <i class="fa fa-times icon-muted glyphicon glyphicon-lock pull-right"
+                       style="padding-top: 5px"></i>
+                </a>
+
+
+                    <a href="profile.html"
+                       class="user pull-right small">
+                        {{ proyecto.lider }}</a>
+                    <span class="text-truncate"
+                          style="padding-left: 10px; padding-right: 10px;width: 15%"><strong>{{ rol.nombre }}</strong></span>
+                            <span class="description text-truncate"
+                                  style="color: #808080; width: 35%; "> {{ rol.descripcion }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+{#        <div class="row">#}
+{#                    <div class="col-lg-6">#}
+{#                        <button class="btn btn-lg btn-success btn-block" type="submit">Crear</button>#}
+{#                    </div>#}
+{#                    <div class="col-lg-6">#}
+{##}
+{#                        <button class="btn btn-lg btn-link btn-block" onclick="window.location.href='/'" type="button">Cancelar</button>#}
+{#                    </div>#}
+{#                </div>#}
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery_1.11.0.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+        function guardarRoles(){
+            var marcados = ($('input:checkbox:checked'))
+            var list = []
+            var obj
+            marcados.each(function(i,element){
+                list.add($(element).val())
+
+            })
+            obj = new Object();
+            obj.id_usuario = '{{ id_usuario }}';
+            obj.lista = list;
+            $.ajax({
+                type: "POST",
+                url: "adm/rol/asignar_rol_usuario",
+                data: { name: "John", location: "Boston" }
+            })
+            .done(function( msg ) {
+            alert( "Data Saved: " + "creado" );
+            });
+        }
+        $(function () {
+            console.log('Habilitar: {{ habilitar }}')
+            {% if not habilitar %}
+                $('.asignar-check').hide();
+                $('#asignarBtn').hide();
+            {% endif %}
+
+            var $contextMenu = $("#contextMenu");
+            var $wellClicked;
+{#            $("body").on("click", ".list-group-item.proyect", function (e) {#}
+{#                $wellClicked = $(this)#}
+{#                $contextMenu.css({#}
+{#                    position: "absolute",#}
+{#                    display: "block",#}
+{#                    left: e.pageX,#}
+{#                    top: e.pageY,#}
+{#                    zIndex: 1000#}
+{#                });#}
+{##}
+{#                $('.well-user-pressed').removeClass('well-user-pressed');#}
+{#                $wellClicked.addClass('well-user-pressed');#}
+{#                return false;#}
+{#            });#}
+            $("body").on("contextmenu", ".list-group-item.proyect", function (e) {
+                $wellClicked = $(this);
+                var idrol = $wellClicked.attr('data-user-id');
+                var asignarRol = $('#roles_item');
+                asignarRol.attr('href', '/adm/rol/asignar_rol_usuario/'+idrol);
+                $('#modificar_rol').attr('href','/adm/rol/modificar/'+idrol);
+                $('#eliminar_rol').attr('href','/adm/rol/eliminar/'+idrol);
+                $('#consultar_rol').attr('href','/adm/rol/consultar/'+idrol);
+                $('#roles_permisos').attr('href','/adm/rol/permisos/'+idrol);
+                $contextMenu.css({
+                    position: "absolute",
+                    display: "block",
+                    left: e.pageX,
+                    top: e.pageY,
+                    zIndex: 1000
+                });
+
+                $('.well-user-pressed').removeClass('well-user-pressed');
+                $wellClicked.addClass('well-user-pressed');
+                return false;
+            });
+
+            $contextMenu.on("click", "a", function () {
+                //console.log("Clicked user: "+$wellClicked.attr('data-user-id'));
+                $contextMenu.hide();
+                $('.well-user-pressed').removeClass('well-user-pressed');
+            });
+
+            $(document).click(function () {
+                $contextMenu.hide();
+                $('.well-user-pressed').removeClass('well-user-pressed');
+            });
+
+        });
+    </script>{% endblock %}
+{% block contextMenu %}
+
+    <div id="contextMenu" class="dropdown clearfix" hidden>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"
+            style="display:block;position:static;margin-bottom:5px;">
+            <li><a id="consultar_rol" tabindex="-1" href="#"><i class="glyphicon glyphicon-info-sign text-info"></i> Consultar</a></li>
+            <li><a id="modificar_rol" tabindex="-1" href="#"><i class="glyphicon glyphicon-pencil text-primary"></i> Modificar</a></li>
+            <li><a id="eliminar_rol" tabindex="-1" href="#"><i class="glyphicon glyphicon-remove text-danger"></i> Eliminar</a></li>
+            <li class="divider"></li>
+            <li><a id="roles_item" tabindex="-1" href="#"><i class="glyphicon glyphicon-user text-warning"></i> Asignar Usuario</a></li>
+            <li><a id="roles_permisos" tabindex="-1" href="#"><i class="glyphicon glyphicon-ok-sign text-warning"></i> Gestionar Permisos</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="panel-footer">
+        <ul class="pager" style="margin: 0px">
+            {% if roles.has_previous %}
+                <li class=""><a href="?page={{ roles.previous_page_number }}">Anterior</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Anterior</a></li>
+            {% endif %}
+            <li>&nbsp;Pagina {{ roles.number }} de {{ roles.paginator.num_pages }}&nbsp;</li>
+            {% if roles.has_next %}
+                <li class=" "><a href="?page={{ roles.next_page_number }}">Siguiente</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Siguiente</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block styles %}
+    <link href="{% static 'css/crear.css' %}" rel="stylesheet"> {% endblock %}
+{% block titleContainer %}<h3>{% if modificar %}Modificar Usuario{% elif consultar %}Consultar Usuario{% else %}Nuevo Usuario{% endif %} </h3>{% endblock %}
+{% block content %}
+
+    <br>
+    <div class="panel panel-default center-block" style="width: 700px">
+        <div class="panel-body">
+            <form id="crear" role="form" autocomplete="off" method="post" action="." >
+                {% csrf_token %}
+                {{ form.management_form }}
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_nombre_usuario">Nombre de Usuario <i class="glyphicon glyphicon-asterisk text-danger" style="font-size: xx-small"></i> </label>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input {% if modificar or consultar %}disabled{% endif %} id="id_nombre_usuario" class="form-control" name="nombre_usuario" type="text"
+                                   placeholder="Usuario" value="{% if form.nombre_usuario.value != None %}{{ form.nombre_usuario.value }}{% endif %}">
+                            <span class="text-danger">{{ form.nombre_usuario.errors  }}</span>
+                        </div>
+
+                    </div>
+                </div>
+                {% if not consultar %}
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_password">Password <i class="glyphicon glyphicon-asterisk text-danger" style="font-size: xx-small"></i></label>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <input  id="id_password" class="form-control" name="password" type="password"
+                                   placeholder="Password" onkeyup="checkPassword(this)">
+                        <span class="text-danger">{{ form.password.errors }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_password">Repita el Password <i class="glyphicon glyphicon-asterisk text-danger" style="font-size: xx-small"></i></label>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <input id="id_password_repeat" class="form-control" name="password_repeat" type="password"
+                                   placeholder="Password" onkeyup="checkPassword(this)">
+
+                            <span id="pass_notok_error" class="text-danger" hidden>
+                                <ul class="errorlist">
+                                    <li>El password no coincide.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div id="pass_ok" class="col-lg-1 text-success" hidden style="">
+                            <i class="glyphicon glyphicon-ok center-block" style="font-size: x-large;top: 5px"></i>
+                        </div>
+                        <div id="pass_notok" class="col-lg-1 text-danger" hidden>
+                            <i class="glyphicon glyphicon-remove center-block" style="font-size: x-large;top: 5px"></i>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_nombre">Nombre</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input {% if consultar %}disabled{% endif %} id="id_nombre" class="form-control" name="nombre" type="text" placeholder="Nombre"
+                                   value="{% if form.nombre.value != None %}{{ form.nombre.value }}{% endif %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_apellido">Apellido</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input {% if consultar %}disabled{% endif %} id="id_apellido" class="form-control" name="apellido" type="text"
+                                   placeholder="Apellido" value="{% if form.apellido.value != None %}{{ form.apellido.value }}{% endif %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="control-label pull-right" for="id_telefono">Telefono</label>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input {% if consultar %}disabled{% endif %} id="id_telefono" class="form-control" name="telefono" type="text"
+                                   placeholder="Telefono" value="{% if form.telefono.value != None %}{{ form.telefono.value }}{% endif %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                    <div class="col-lg-5 col-md-5">
+                        <label class="control-label pull-right" for="id_documento" >Documento  </label>
+                        </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input {% if consultar %}disabled{% endif %} id="id_documento" class="form-control" name="documento" type="text"
+                               placeholder="Documento" value="{% if form.documento.value != None %}{{ form.documento.value }}{% endif %}">
+                        <span class="text-danger">{{  form.documento.errors }}</span>
+                    </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                    {% if not consultar %}
+                    <div class="col-lg-6 col-md-6">
+                        <button class="btn btn-lg btn-success btn-block" type="button" onclick="validate()">{% if modificar %}Modificar{% else %}Crear{% endif %}</button>
+                    </div>
+                    {% endif %}
+                    <div class="col-lg-6 col-md-6">
+
+                        <button class="btn btn-lg btn-link btn-block" onclick="window.location.href='{% url 'adm.usuario.listar' %}'" type="button">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <script type="application/javascript">
+        function validate(){
+            var pass1,pass2;
+            pass1 = $('#id_password').val();
+            pass2 = $('#id_password_repeat').val();
+            if(pass1 == pass2){
+                $('#pass_notok_error').hide();
+                $('#crear').submit();
+            }else{
+                $('#pass_notok_error').show();
+            }
+
+        }
+        function checkPassword(obj){
+            var _this = $('#id_password_repeat');
+            if(_this.val()=='') return;
+            if(_this.val() == $('#id_password').val()){
+                $('#pass_ok').show();
+                $('#pass_notok').hide();
+            }else{
+                $('#pass_ok').hide();
+                $('#pass_notok').show();
+            }
+        }
+    </script>
+{% endblock %}

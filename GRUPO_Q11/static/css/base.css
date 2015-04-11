@@ -1,0 +1,27 @@
+
+#bird{
+    fill: white;
+
+}
+#middlewing{
+    fill: white;
+}
+#beak{
+    fill: white;
+}
+#bird:hover > #beak,#bird:hover > #middlewing{
+    fill: #637cc5;
+}
+#bird:hover > #upwing,#bird:hover > #bottomwing{
+    fill: #64669c;
+}
+#bird:hover > #eye{
+    fill: #000000;
+}
+#icon-user{
+    border-bottom-left-radius: 0;
+}
+#icon-lock{
+    border-top-left-radius: 0;
+
+}

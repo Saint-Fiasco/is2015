@@ -1,0 +1,159 @@
+{% load staticfiles %}
+{% load i18n %}
+{% language 'es' %}
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}GUYRA CAMPANA PM{% endblock %}</title>
+
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+        <!-- Base css -->
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        <!-- Login custom css -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        {% block styles %} {% endblock %}
+
+
+    </head>
+
+    <body>
+    {% block contextMenu %}{% endblock %}
+    {% block header %}
+        <nav class="navbar navbar-fixed-top" role="navigation" id="mainnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav"><span
+                        class="sr-only">Toggle navigation</span><i
+                        class="fa fa-list"></i></button>
+                <a class="navbar-brand" href=""><b class="icon-cover"></b><span><img
+                        src="{% static 'img/pajarocampana.svg' %}"> GCPM</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-nav">
+                <ul class="nav navbar-nav navbar-left">
+                    {% if user.is_authenticated %}
+                        {% block navList %}
+                            <li class="active"><a href="/"><i class="glyphicon glyphicon-briefcase"></i><span
+                                    class="text">ADM</span></a>
+                            </li>
+                        {% endblock %}
+                    {% endif %}
+                </ul>
+
+            </div>
+        </nav>
+
+    {% endblock %}
+    <div class="container">
+
+        <div class="col-lg-2 col-md-2">
+
+            {% if user.is_authenticated %}
+                <div class="panel panel-default panel-user panel-no-padding hidden-sm hidden-xs" style="padding: 10px">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <div class="media"><a class="pull-left"><i class="glyphicon glyphicon-user"
+                                                                       style="font-size: 3em; color: #444"></i></a>
+
+                                <div class="media-body"><h4 class="media-heading">
+                            <span
+                                    class="welcome">Hola</span><span>{{ user }}</span></h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--<i class="glyphicon glyphicon-user" style="font-size: 3em; color: #444"></i>-->
+                        <!---->
+                        <!--<strong class="" style="padding-bottom: 20px">Bienvenido <a href="#">Julio Reyes</a>!!</strong>-->
+                    </div>
+                    <div class="panel-body">
+
+{#                    <span class="btn btn-default" style="width: 100%">Perfil&nbsp;<i#}
+{#                            class="glyphicon glyphicon-cog"></i> </span>#}
+                    <a class="btn btn-default" style="width: 100%" href="/accounts/logout/">Salir&nbsp;<i
+                            class="glyphicon glyphicon-log-out"></i> </a>
+                    </div>
+                </div>
+                {#        #}
+                <div class="panel-group" id="app-menu">
+                    <div class="panel panel-default panel-no-padding">
+                        <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse"
+                                                                              data-parent="#app-menu"
+                                                                              href="#menu-app" class="collapsed">
+                            ADM </a></h4>
+
+                            <div class="panel-toolbar"><a data-toggle="collapse" data-parent="#app-menu"
+                                                          href="#menu-app"
+                                                          class=""><i
+                                    class="fa fa-angle-down pull-right collapse-trigger"></i></a></div>
+                        </div>
+                        <div id="menu-app" class="panel-collapse collapse in" style="height: auto;">
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-stacked" id="pages-app">
+                                    <li class=""><a href="{% url 'adm.usuario.listar' %}" ><i
+                                            class="glyphicon glyphicon-user"></i> Usuario</a><i
+                                            class="fa fa-angle-down pull-right"></i></a>
+
+                                    </li>
+                                    <li class=""><a href="{% url 'adm.proyecto.listar' %}" ><i
+                                            class="glyphicon glyphicon-briefcase"></i> Proyecto</a><i
+                                            class="fa fa-angle-down pull-right"></i></a>
+
+                                    </li>
+                                    <li class=""><a href="{% url 'adm.rol.listar' %}" ><i
+                                            class="glyphicon glyphicon-lock"></i> Roles</a><i
+                                            class="fa fa-angle-down pull-right"></i></a>
+
+                                    </li>
+                                    <li class=""><a href="{% url 'adm.permisos.listar' %}" ><i
+                                            class="glyphicon glyphicon-check"></i> Permisos</a><i
+                                            class="fa fa-angle-down pull-right"></i></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            {% endif %}
+            {#    #}
+            {% block left %}
+            {% endblock %}
+        </div>
+
+        <div class="col-lg-10 col-md-10">
+            <section id="middle">
+                <div class="page-header">
+                    {% block titleContainer %}{% endblock %}
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body tasks">
+                        {% block content %}
+
+                        {% endblock %}
+                    </div>
+                    {% block footer %}{% endblock %}
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    {% block scripts %}
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{% static 'js/jquery_1.11.0.min.js' %}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    {% endblock %}
+    </body>
+
+    </html>
+{% endlanguage %}

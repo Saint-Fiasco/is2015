@@ -1,0 +1,11 @@
+.well-user:hover, .well-user-pressed{
+    box-shadow: 5px 5px 10px black !important;
+    /*color: white !important;*/
+    background-color: rgba(15, 124, 165, 0.27) !important;
+    /*border: 1px;*/
+    cursor: pointer;
+}
+.well-user{
+    box-shadow: 2px 2px 5px #1C2761;
+    background-color: white;
+}

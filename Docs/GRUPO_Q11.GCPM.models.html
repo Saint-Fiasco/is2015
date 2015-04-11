@@ -1,0 +1,2322 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module GRUPO_Q11.GCPM.models</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="GRUPO_Q11.html"><font color="#ffffff">GRUPO_Q11</font></a>.<a href="GRUPO_Q11.GCPM.html"><font color="#ffffff">GCPM</font></a>.models</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/julio/PycharmProjects/is2_2014/GRUPO_Q11/GCPM/models.py">/home/julio/PycharmProjects/is2_2014/GRUPO_Q11/GCPM/models.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;This&nbsp;is&nbsp;an&nbsp;auto-generated&nbsp;Django&nbsp;model&nbsp;module.<br>
+#&nbsp;You'll&nbsp;have&nbsp;to&nbsp;do&nbsp;the&nbsp;following&nbsp;manually&nbsp;to&nbsp;clean&nbsp;this&nbsp;up:<br>
+#&nbsp;&nbsp;&nbsp;*&nbsp;Rearrange&nbsp;models'&nbsp;order<br>
+#&nbsp;&nbsp;&nbsp;*&nbsp;Make&nbsp;sure&nbsp;each&nbsp;model&nbsp;has&nbsp;one&nbsp;field&nbsp;with&nbsp;primary_key=True<br>
+#&nbsp;&nbsp;&nbsp;*&nbsp;Remove&nbsp;`managed&nbsp;=&nbsp;False`&nbsp;lines&nbsp;for&nbsp;those&nbsp;models&nbsp;you&nbsp;wish&nbsp;to&nbsp;give&nbsp;write&nbsp;DB&nbsp;access<br>
+#&nbsp;Feel&nbsp;free&nbsp;to&nbsp;rename&nbsp;the&nbsp;models,&nbsp;but&nbsp;don't&nbsp;rename&nbsp;db_table&nbsp;values&nbsp;or&nbsp;field&nbsp;names.<br>
+#<br>
+#&nbsp;Also&nbsp;note:&nbsp;You'll&nbsp;have&nbsp;to&nbsp;insert&nbsp;the&nbsp;output&nbsp;of&nbsp;'django-admin.py&nbsp;sqlcustom&nbsp;[appname]'<br>
+#&nbsp;into&nbsp;your&nbsp;database.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="django.db.models.html">django.db.models</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="django.contrib.auth.models.html#AbstractBaseUser">django.contrib.auth.models.AbstractBaseUser</a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Usuario">Usuario</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="django.contrib.auth.models.html#BaseUserManager">django.contrib.auth.models.BaseUserManager</a>(<a href="django.db.models.manager.html#Manager">django.db.models.manager.Manager</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#MyUserManager">MyUserManager</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="django.db.models.base.html#Model">django.db.models.base.Model</a>(django.db.models.base.NewBase)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Archivo">Archivo</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Atributo">Atributo</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Comite">Comite</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Fase">Fase</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Item">Item</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#LineaBase">LineaBase</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#LineaBaseItem">LineaBaseItem</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Permiso">Permiso</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Proyecto">Proyecto</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#ProyectoFase">ProyectoFase</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Rol">Rol</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#RolPermiso">RolPermiso</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#RolUsuario">RolUsuario</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#Solicitud">Solicitud</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#SolicitudItem">SolicitudItem</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#TipoItem">TipoItem</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#UsuarioProyecto">UsuarioProyecto</a>
+</font></dt><dt><font face="helvetica, arial"><a href="GRUPO_Q11.GCPM.models.html#UsuarioRolFase">UsuarioRolFase</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Archivo">class <strong>Archivo</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Archivo">Archivo</a>(id_archivo,&nbsp;descripcion,&nbsp;archivo,&nbsp;id_item_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Archivo">Archivo</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_item</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Archivo-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Archivo-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Archivo-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Archivo-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Archivo-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Archivo-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Archivo-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Archivo-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Archivo-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Archivo-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Archivo-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Archivo-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Archivo-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Atributo">class <strong>Atributo</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Atributo">Atributo</a>(id_atributo,&nbsp;tipo,&nbsp;nombre,&nbsp;id_tipo_item_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Atributo">Atributo</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_tipo_item</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Atributo-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Atributo-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Atributo-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Atributo-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Atributo-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Atributo-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Atributo-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Atributo-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Atributo-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Atributo-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Atributo-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Atributo-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Atributo-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Comite">class <strong>Comite</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Comite">Comite</a>(id_comite,&nbsp;participantes,&nbsp;id_usuario_id,&nbsp;id_proyecto_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Comite">Comite</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_proyecto</strong></dt>
+</dl>
+<dl><dt><strong>id_usuario</strong></dt>
+</dl>
+<dl><dt><strong>solicitud_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Comite-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Comite-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Comite-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Comite-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Comite-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Comite-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Comite-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Comite-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Comite-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Comite-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Comite-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Comite-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Comite-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Comite-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Comite-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Comite-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Comite-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Comite-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Comite-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Fase">class <strong>Fase</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Fase">Fase</a>(id_fase,&nbsp;nro_secuencia,&nbsp;estado,&nbsp;descripcion)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Fase">Fase</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>lineabase_set</strong></dt>
+</dl>
+<dl><dt><strong>proyectofase_set</strong></dt>
+</dl>
+<dl><dt><strong>usuariorolfase_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Fase-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Fase-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Fase-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Fase-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Fase-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Fase-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Fase-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Fase-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Fase-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Fase-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Fase-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Fase-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Fase-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Fase-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Fase-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Fase-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Fase-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Fase-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Fase-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Item">class <strong>Item</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Item">Item</a>(id_item,&nbsp;codigo,&nbsp;version,&nbsp;estado,&nbsp;prioridad,&nbsp;nombre,&nbsp;descripcion,&nbsp;fehca_cracion,&nbsp;fecha_modificacion,&nbsp;padre,&nbsp;antecesor,&nbsp;id_tipo_item_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Item">Item</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>archivo_set</strong></dt>
+</dl>
+<dl><dt><strong>id_tipo_item</strong></dt>
+</dl>
+<dl><dt><strong>lineabaseitem_set</strong></dt>
+</dl>
+<dl><dt><strong>solicituditem_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Item-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Item-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Item-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Item-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Item-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Item-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Item-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Item-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Item-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Item-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Item-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Item-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Item-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Item-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Item-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Item-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Item-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Item-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Item-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="LineaBase">class <strong>LineaBase</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#LineaBase">LineaBase</a>(id_linea_base,&nbsp;nro_items,&nbsp;estado,&nbsp;id_fase_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#LineaBase">LineaBase</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_fase</strong></dt>
+</dl>
+<dl><dt><strong>lineabaseitem_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="LineaBase-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="LineaBase-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBase-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="LineaBase-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="LineaBase-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBase-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBase-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#LineaBase-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="LineaBase-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="LineaBase-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="LineaBase-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="LineaBase-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="LineaBase-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="LineaBaseItem">class <strong>LineaBaseItem</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#LineaBaseItem">LineaBaseItem</a>(id,&nbsp;id_linea_base_id,&nbsp;id_item_item_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#LineaBaseItem">LineaBaseItem</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_item_item</strong></dt>
+</dl>
+<dl><dt><strong>id_linea_base</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="LineaBaseItem-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#LineaBaseItem-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="LineaBaseItem-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="LineaBaseItem-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MyUserManager">class <strong>MyUserManager</strong></a>(<a href="django.contrib.auth.models.html#BaseUserManager">django.contrib.auth.models.BaseUserManager</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#MyUserManager">MyUserManager</a></dd>
+<dd><a href="django.contrib.auth.models.html#BaseUserManager">django.contrib.auth.models.BaseUserManager</a></dd>
+<dd><a href="django.db.models.manager.html#Manager">django.db.models.manager.Manager</a></dd>
+<dd>django.utils.deprecation.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MyUserManager-create_superuser"><strong>create_superuser</strong></a>(self, nombre_usuario, password)</dt><dd><tt>Creates&nbsp;and&nbsp;saves&nbsp;a&nbsp;superuser&nbsp;with&nbsp;the&nbsp;given&nbsp;email,&nbsp;date&nbsp;of<br>
+birth&nbsp;and&nbsp;password.</tt></dd></dl>
+
+<dl><dt><a name="MyUserManager-create_user"><strong>create_user</strong></a>(self, nombre_usuario, password<font color="#909090">=None</font>)</dt><dd><tt>Creates&nbsp;and&nbsp;saves&nbsp;a&nbsp;User&nbsp;with&nbsp;the&nbsp;given&nbsp;email,&nbsp;date&nbsp;of<br>
+birth&nbsp;and&nbsp;password.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="django.contrib.auth.models.html#BaseUserManager">django.contrib.auth.models.BaseUserManager</a>:<br>
+<dl><dt><a name="MyUserManager-get_by_natural_key"><strong>get_by_natural_key</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="MyUserManager-make_random_password"><strong>make_random_password</strong></a>(self, length<font color="#909090">=10</font>, allowed_chars<font color="#909090">=u'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789'</font>)</dt><dd><tt>Generates&nbsp;a&nbsp;random&nbsp;password&nbsp;with&nbsp;the&nbsp;given&nbsp;length&nbsp;and&nbsp;given<br>
+allowed_chars.&nbsp;Note&nbsp;that&nbsp;the&nbsp;default&nbsp;value&nbsp;of&nbsp;allowed_chars&nbsp;does&nbsp;not<br>
+have&nbsp;"I"&nbsp;or&nbsp;"O"&nbsp;or&nbsp;letters&nbsp;and&nbsp;digits&nbsp;that&nbsp;look&nbsp;similar&nbsp;--&nbsp;just&nbsp;to<br>
+avoid&nbsp;confusion.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="django.contrib.auth.models.html#BaseUserManager">django.contrib.auth.models.BaseUserManager</a>:<br>
+<dl><dt><a name="MyUserManager-normalize_email"><strong>normalize_email</strong></a>(cls, email)<font color="#909090"><font face="helvetica, arial"> from <a href="django.db.models.manager.html#RenameManagerMethods">django.db.models.manager.RenameManagerMethods</a></font></font></dt><dd><tt>Normalize&nbsp;the&nbsp;address&nbsp;by&nbsp;lowercasing&nbsp;the&nbsp;domain&nbsp;part&nbsp;of&nbsp;the&nbsp;email<br>
+address.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.manager.html#Manager">django.db.models.manager.Manager</a>:<br>
+<dl><dt><a name="MyUserManager-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-aggregate"><strong>aggregate</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-all"><strong>all</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-annotate"><strong>annotate</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-bulk_create"><strong>bulk_create</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-complex_filter"><strong>complex_filter</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-contribute_to_class"><strong>contribute_to_class</strong></a>(self, model, name)</dt></dl>
+
+<dl><dt><a name="MyUserManager-count"><strong>count</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-create"><strong>create</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-dates"><strong>dates</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-datetimes"><strong>datetimes</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-db_manager"><strong>db_manager</strong></a>(self, using)</dt></dl>
+
+<dl><dt><a name="MyUserManager-defer"><strong>defer</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-distinct"><strong>distinct</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-earliest"><strong>earliest</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-exclude"><strong>exclude</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-exists"><strong>exists</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-extra"><strong>extra</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-filter"><strong>filter</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-first"><strong>first</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-get"><strong>get</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-get_or_create"><strong>get_or_create</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-get_query_set"><strong>get_query_set</strong></a> = wrapped(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-get_queryset"><strong>get_queryset</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;new&nbsp;QuerySet&nbsp;object.&nbsp;&nbsp;Subclasses&nbsp;can&nbsp;override&nbsp;this&nbsp;method<br>
+to&nbsp;easily&nbsp;customize&nbsp;the&nbsp;behavior&nbsp;of&nbsp;the&nbsp;Manager.</tt></dd></dl>
+
+<dl><dt><a name="MyUserManager-in_bulk"><strong>in_bulk</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-iterator"><strong>iterator</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-last"><strong>last</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-latest"><strong>latest</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-none"><strong>none</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MyUserManager-only"><strong>only</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-order_by"><strong>order_by</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-prefetch_related"><strong>prefetch_related</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-raw"><strong>raw</strong></a>(self, raw_query, params<font color="#909090">=None</font>, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-reverse"><strong>reverse</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-select_for_update"><strong>select_for_update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-select_related"><strong>select_related</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-using"><strong>using</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-values"><strong>values</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="MyUserManager-values_list"><strong>values_list</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.manager.html#Manager">django.db.models.manager.Manager</a>:<br>
+<dl><dt><strong>db</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="django.db.models.manager.html#Manager">django.db.models.manager.Manager</a>:<br>
+<dl><dt><strong>creation_counter</strong> = 31</dl>
+
+<hr>
+Data descriptors inherited from django.utils.deprecation.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Permiso">class <strong>Permiso</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Permiso">Permiso</a>(id_permiso,&nbsp;nombre,&nbsp;descripcion)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Permiso">Permiso</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>rolpermiso_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Permiso-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Permiso-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Permiso-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Permiso-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Permiso-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Permiso-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Permiso-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Permiso-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Permiso-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Permiso-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Permiso-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Permiso-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Permiso-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Proyecto">class <strong>Proyecto</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Proyecto">Proyecto</a>(id_proyecto,&nbsp;nombre,&nbsp;descripcion,&nbsp;estado,&nbsp;fecha,&nbsp;complejidad,&nbsp;costo,&nbsp;lider_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Proyecto">Proyecto</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>comite_set</strong></dt>
+</dl>
+<dl><dt><strong>lider</strong></dt>
+</dl>
+<dl><dt><strong>proyectofase_set</strong></dt>
+</dl>
+<dl><dt><strong>usuarioproyecto_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Proyecto-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Proyecto-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Proyecto-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Proyecto-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Proyecto-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Proyecto-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Proyecto-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Proyecto-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Proyecto-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Proyecto-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Proyecto-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Proyecto-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Proyecto-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ProyectoFase">class <strong>ProyectoFase</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ProyectoFase">ProyectoFase</a>(id,&nbsp;id_proyecto_proyecto_id,&nbsp;id_fase_fase_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#ProyectoFase">ProyectoFase</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_fase_fase</strong></dt>
+</dl>
+<dl><dt><strong>id_proyecto_proyecto</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="ProyectoFase-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#ProyectoFase-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="ProyectoFase-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="ProyectoFase-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Rol">class <strong>Rol</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Rol">Rol</a>(id_rol,&nbsp;is_active,&nbsp;nombre,&nbsp;descripcion)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Rol">Rol</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>rolpermiso_set</strong></dt>
+</dl>
+<dl><dt><strong>rolusuario_set</strong></dt>
+</dl>
+<dl><dt><strong>usuariorolfase_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Rol-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Rol-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Rol-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Rol-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Rol-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Rol-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Rol-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Rol-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Rol-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Rol-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Rol-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Rol-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Rol-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Rol-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Rol-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Rol-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Rol-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Rol-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Rol-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RolPermiso">class <strong>RolPermiso</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#RolPermiso">RolPermiso</a>(id,&nbsp;id_permiso_id,&nbsp;id_rol_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#RolPermiso">RolPermiso</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_permiso</strong></dt>
+</dl>
+<dl><dt><strong>id_rol</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="RolPermiso-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="RolPermiso-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolPermiso-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="RolPermiso-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="RolPermiso-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolPermiso-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolPermiso-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#RolPermiso-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="RolPermiso-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="RolPermiso-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="RolPermiso-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="RolPermiso-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="RolPermiso-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RolUsuario">class <strong>RolUsuario</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#RolUsuario">RolUsuario</a>(id,&nbsp;id_usuario_usuario_id,&nbsp;id_rol_rol_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#RolUsuario">RolUsuario</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_rol_rol</strong></dt>
+</dl>
+<dl><dt><strong>id_usuario_usuario</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="RolUsuario-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="RolUsuario-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolUsuario-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="RolUsuario-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="RolUsuario-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolUsuario-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="RolUsuario-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#RolUsuario-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="RolUsuario-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="RolUsuario-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="RolUsuario-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="RolUsuario-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="RolUsuario-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Solicitud">class <strong>Solicitud</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Solicitud">Solicitud</a>(id_solicitud,&nbsp;fecha,&nbsp;estado,&nbsp;costo,&nbsp;complejidad,&nbsp;votos_favor,&nbsp;votos_contra,&nbsp;id_usuario_id,&nbsp;id_comite_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Solicitud">Solicitud</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Solicitud-get_next_by_fecha"><strong>get_next_by_fecha</strong></a> = _curried(*moreargs, **morekwargs)</dt></dl>
+
+<dl><dt><a name="Solicitud-get_previous_by_fecha"><strong>get_previous_by_fecha</strong></a> = _curried(*moreargs, **morekwargs)</dt></dl>
+
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_comite</strong></dt>
+</dl>
+<dl><dt><strong>id_usuario</strong></dt>
+</dl>
+<dl><dt><strong>solicituditem_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Solicitud-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Solicitud-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Solicitud-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Solicitud-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Solicitud-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Solicitud-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Solicitud-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Solicitud-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Solicitud-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Solicitud-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Solicitud-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Solicitud-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Solicitud-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SolicitudItem">class <strong>SolicitudItem</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#SolicitudItem">SolicitudItem</a>(id,&nbsp;id_solicitud_solicitud_id,&nbsp;id_item_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#SolicitudItem">SolicitudItem</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_item</strong></dt>
+</dl>
+<dl><dt><strong>id_solicitud_solicitud</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="SolicitudItem-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#SolicitudItem-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="SolicitudItem-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="SolicitudItem-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TipoItem">class <strong>TipoItem</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#TipoItem">TipoItem</a>(id_tipo_item,&nbsp;nombre,&nbsp;descripcion,&nbsp;estado,&nbsp;numero)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#TipoItem">TipoItem</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>atributo_set</strong></dt>
+</dl>
+<dl><dt><strong>item_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="TipoItem-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="TipoItem-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TipoItem-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="TipoItem-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="TipoItem-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TipoItem-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TipoItem-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#TipoItem-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="TipoItem-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="TipoItem-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="TipoItem-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="TipoItem-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="TipoItem-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Usuario">class <strong>Usuario</strong></a>(<a href="django.contrib.auth.models.html#AbstractBaseUser">django.contrib.auth.models.AbstractBaseUser</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Usuario">Usuario</a>(password,&nbsp;last_login,&nbsp;id_usuario,&nbsp;nombre_usuario,&nbsp;nombre,&nbsp;apellido,&nbsp;telefono,&nbsp;documento,&nbsp;is_active,&nbsp;is_admin)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#Usuario">Usuario</a></dd>
+<dd><a href="django.contrib.auth.models.html#AbstractBaseUser">django.contrib.auth.models.AbstractBaseUser</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Usuario-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-get_full_name"><strong>get_full_name</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-get_next_by_last_login"><strong>get_next_by_last_login</strong></a> = _curried(*moreargs, **morekwargs)</dt></dl>
+
+<dl><dt><a name="Usuario-get_previous_by_last_login"><strong>get_previous_by_last_login</strong></a> = _curried(*moreargs, **morekwargs)</dt></dl>
+
+<dl><dt><a name="Usuario-get_short_name"><strong>get_short_name</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-has_module_perms"><strong>has_module_perms</strong></a>(self, app_label)</dt><dd><tt>Does&nbsp;the&nbsp;user&nbsp;have&nbsp;permissions&nbsp;to&nbsp;view&nbsp;the&nbsp;app&nbsp;`app_label`?</tt></dd></dl>
+
+<dl><dt><a name="Usuario-has_perm"><strong>has_perm</strong></a>(self, perm, obj<font color="#909090">=None</font>)</dt><dd><tt>Does&nbsp;the&nbsp;user&nbsp;have&nbsp;a&nbsp;specific&nbsp;permission?</tt></dd></dl>
+
+<strong>objects</strong> = &lt;GRUPO_Q11.GCPM.models.MyUserManager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>comite_set</strong></dt>
+</dl>
+<dl><dt><strong>is_staff</strong></dt>
+<dd><tt>Is&nbsp;the&nbsp;user&nbsp;a&nbsp;member&nbsp;of&nbsp;staff?</tt></dd>
+</dl>
+<dl><dt><strong>proyecto_set</strong></dt>
+</dl>
+<dl><dt><strong>rolusuario_set</strong></dt>
+</dl>
+<dl><dt><strong>solicitud_set</strong></dt>
+</dl>
+<dl><dt><strong>usuarioproyecto_set</strong></dt>
+</dl>
+<dl><dt><strong>usuariorolfase_set</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<dl><dt><strong>USERNAME_FIELD</strong> = u'nombre_usuario'</dl>
+
+<hr>
+Methods inherited from <a href="django.contrib.auth.models.html#AbstractBaseUser">django.contrib.auth.models.AbstractBaseUser</a>:<br>
+<dl><dt><a name="Usuario-__unicode__"><strong>__unicode__</strong></a> = __str__(self)</dt></dl>
+
+<dl><dt><a name="Usuario-check_password"><strong>check_password</strong></a>(self, raw_password)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;of&nbsp;whether&nbsp;the&nbsp;raw_password&nbsp;was&nbsp;correct.&nbsp;Handles<br>
+hashing&nbsp;formats&nbsp;behind&nbsp;the&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-get_username"><strong>get_username</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;identifying&nbsp;username&nbsp;for&nbsp;this&nbsp;User</tt></dd></dl>
+
+<dl><dt><a name="Usuario-has_usable_password"><strong>has_usable_password</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-is_anonymous"><strong>is_anonymous</strong></a>(self)</dt><dd><tt>Always&nbsp;returns&nbsp;False.&nbsp;This&nbsp;is&nbsp;a&nbsp;way&nbsp;of&nbsp;comparing&nbsp;User&nbsp;objects&nbsp;to<br>
+anonymous&nbsp;users.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-is_authenticated"><strong>is_authenticated</strong></a>(self)</dt><dd><tt>Always&nbsp;return&nbsp;True.&nbsp;This&nbsp;is&nbsp;a&nbsp;way&nbsp;to&nbsp;tell&nbsp;if&nbsp;the&nbsp;user&nbsp;has&nbsp;been<br>
+authenticated&nbsp;in&nbsp;templates.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-natural_key"><strong>natural_key</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-set_password"><strong>set_password</strong></a>(self, raw_password)</dt></dl>
+
+<dl><dt><a name="Usuario-set_unusable_password"><strong>set_unusable_password</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.contrib.auth.models.html#AbstractBaseUser">django.contrib.auth.models.AbstractBaseUser</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class django.contrib.auth.models.Meta&gt;</dl>
+
+<dl><dt><strong>REQUIRED_FIELDS</strong> = []</dl>
+
+<dl><dt><strong>is_active</strong> = True</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="Usuario-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Usuario-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Usuario-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Usuario-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Usuario-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#Usuario-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="Usuario-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Usuario-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="Usuario-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Usuario-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="Usuario-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="UsuarioProyecto">class <strong>UsuarioProyecto</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#UsuarioProyecto">UsuarioProyecto</a>(id,&nbsp;id_usuario_usuario_id,&nbsp;id_proyecto_proyecto_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#UsuarioProyecto">UsuarioProyecto</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_proyecto_proyecto</strong></dt>
+</dl>
+<dl><dt><strong>id_usuario_usuario</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="UsuarioProyecto-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#UsuarioProyecto-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioProyecto-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="UsuarioProyecto-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="UsuarioRolFase">class <strong>UsuarioRolFase</strong></a>(<a href="django.db.models.base.html#Model">django.db.models.base.Model</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#UsuarioRolFase">UsuarioRolFase</a>(id,&nbsp;id_usuario_id,&nbsp;id_rol_id,&nbsp;id_fase_id)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="GRUPO_Q11.GCPM.models.html#UsuarioRolFase">UsuarioRolFase</a></dd>
+<dd><a href="django.db.models.base.html#Model">django.db.models.base.Model</a></dd>
+<dd>django.db.models.base.NewBase</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<strong>objects</strong> = &lt;django.db.models.manager.Manager object&gt;
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>id_fase</strong></dt>
+</dl>
+<dl><dt><strong>id_rol</strong></dt>
+</dl>
+<dl><dt><strong>id_usuario</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>DoesNotExist</strong> = &lt;class 'GRUPO_Q11.GCPM.models.DoesNotExist'&gt;</dl>
+
+<dl><dt><strong>MultipleObjectsReturned</strong> = &lt;class 'GRUPO_Q11.GCPM.models.MultipleObjectsReturned'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><a name="UsuarioRolFase-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-__ne__"><strong>__ne__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-__reduce__"><strong>__reduce__</strong></a>(self)</dt><dd><tt>Provides&nbsp;pickling&nbsp;support.&nbsp;Normally,&nbsp;this&nbsp;just&nbsp;dispatches&nbsp;to&nbsp;Python's<br>
+standard&nbsp;handling.&nbsp;However,&nbsp;for&nbsp;models&nbsp;with&nbsp;deferred&nbsp;field&nbsp;loading,&nbsp;we<br>
+need&nbsp;to&nbsp;do&nbsp;things&nbsp;manually,&nbsp;as&nbsp;they're&nbsp;dynamically&nbsp;created&nbsp;classes&nbsp;and<br>
+only&nbsp;module-level&nbsp;classes&nbsp;can&nbsp;be&nbsp;pickled&nbsp;by&nbsp;the&nbsp;default&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-clean"><strong>clean</strong></a>(self)</dt><dd><tt>Hook&nbsp;for&nbsp;doing&nbsp;any&nbsp;extra&nbsp;model-wide&nbsp;validation&nbsp;after&nbsp;<a href="#UsuarioRolFase-clean">clean</a>()&nbsp;has&nbsp;been<br>
+called&nbsp;on&nbsp;every&nbsp;field&nbsp;by&nbsp;self.<strong>clean_fields</strong>.&nbsp;Any&nbsp;ValidationError&nbsp;raised<br>
+by&nbsp;this&nbsp;method&nbsp;will&nbsp;not&nbsp;be&nbsp;associated&nbsp;with&nbsp;a&nbsp;particular&nbsp;field;&nbsp;it&nbsp;will<br>
+have&nbsp;a&nbsp;special-case&nbsp;association&nbsp;with&nbsp;the&nbsp;field&nbsp;defined&nbsp;by&nbsp;NON_FIELD_ERRORS.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-clean_fields"><strong>clean_fields</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Cleans&nbsp;all&nbsp;fields&nbsp;and&nbsp;raises&nbsp;a&nbsp;ValidationError&nbsp;containing&nbsp;message_dict<br>
+of&nbsp;all&nbsp;validation&nbsp;errors&nbsp;if&nbsp;any&nbsp;occur.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-date_error_message"><strong>date_error_message</strong></a>(self, lookup_type, field, unique_for)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-delete"><strong>delete</strong></a>(self, using<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-full_clean"><strong>full_clean</strong></a>(self, exclude<font color="#909090">=None</font>, validate_unique<font color="#909090">=True</font>)</dt><dd><tt>Calls&nbsp;clean_fields,&nbsp;clean,&nbsp;and&nbsp;validate_unique,&nbsp;on&nbsp;the&nbsp;model,<br>
+and&nbsp;raises&nbsp;a&nbsp;``ValidationError``&nbsp;for&nbsp;any&nbsp;errors&nbsp;that&nbsp;occurred.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-prepare_database_save"><strong>prepare_database_save</strong></a>(self, unused)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-save"><strong>save</strong></a>(self, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;the&nbsp;current&nbsp;instance.&nbsp;Override&nbsp;this&nbsp;in&nbsp;a&nbsp;subclass&nbsp;if&nbsp;you&nbsp;want&nbsp;to<br>
+control&nbsp;the&nbsp;saving&nbsp;process.<br>
+&nbsp;<br>
+The&nbsp;'force_insert'&nbsp;and&nbsp;'force_update'&nbsp;parameters&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;insist<br>
+that&nbsp;the&nbsp;"save"&nbsp;must&nbsp;be&nbsp;an&nbsp;SQL&nbsp;insert&nbsp;or&nbsp;update&nbsp;(or&nbsp;equivalent&nbsp;for<br>
+non-SQL&nbsp;backends),&nbsp;respectively.&nbsp;Normally,&nbsp;they&nbsp;should&nbsp;not&nbsp;be&nbsp;set.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-save_base"><strong>save_base</strong></a>(self, raw<font color="#909090">=False</font>, force_insert<font color="#909090">=False</font>, force_update<font color="#909090">=False</font>, using<font color="#909090">=None</font>, update_fields<font color="#909090">=None</font>)</dt><dd><tt>Handles&nbsp;the&nbsp;parts&nbsp;of&nbsp;saving&nbsp;which&nbsp;should&nbsp;be&nbsp;done&nbsp;only&nbsp;once&nbsp;per&nbsp;save,<br>
+yet&nbsp;need&nbsp;to&nbsp;be&nbsp;done&nbsp;in&nbsp;raw&nbsp;saves,&nbsp;too.&nbsp;This&nbsp;includes&nbsp;some&nbsp;sanity<br>
+checks&nbsp;and&nbsp;signal&nbsp;sending.<br>
+&nbsp;<br>
+The&nbsp;'raw'&nbsp;argument&nbsp;is&nbsp;telling&nbsp;save_base&nbsp;not&nbsp;to&nbsp;save&nbsp;any&nbsp;parent<br>
+models&nbsp;and&nbsp;not&nbsp;to&nbsp;do&nbsp;any&nbsp;changes&nbsp;to&nbsp;the&nbsp;values&nbsp;before&nbsp;save.&nbsp;This<br>
+is&nbsp;used&nbsp;by&nbsp;fixture&nbsp;loading.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-serializable_value"><strong>serializable_value</strong></a>(self, field_name)</dt><dd><tt>Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;field&nbsp;name&nbsp;for&nbsp;this&nbsp;instance.&nbsp;If&nbsp;the&nbsp;field&nbsp;is<br>
+a&nbsp;foreign&nbsp;key,&nbsp;returns&nbsp;the&nbsp;id&nbsp;value,&nbsp;instead&nbsp;of&nbsp;the&nbsp;object.&nbsp;If&nbsp;there's<br>
+no&nbsp;Field&nbsp;object&nbsp;with&nbsp;this&nbsp;name&nbsp;on&nbsp;the&nbsp;model,&nbsp;the&nbsp;model&nbsp;attribute's<br>
+value&nbsp;is&nbsp;returned&nbsp;directly.<br>
+&nbsp;<br>
+Used&nbsp;to&nbsp;serialize&nbsp;a&nbsp;field's&nbsp;value&nbsp;(in&nbsp;the&nbsp;serializer,&nbsp;or&nbsp;form&nbsp;output,<br>
+for&nbsp;example).&nbsp;Normally,&nbsp;you&nbsp;would&nbsp;just&nbsp;access&nbsp;the&nbsp;attribute&nbsp;directly<br>
+and&nbsp;not&nbsp;use&nbsp;this&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="UsuarioRolFase-unique_error_message"><strong>unique_error_message</strong></a>(self, model_class, unique_check)</dt></dl>
+
+<dl><dt><a name="UsuarioRolFase-validate_unique"><strong>validate_unique</strong></a>(self, exclude<font color="#909090">=None</font>)</dt><dd><tt>Checks&nbsp;unique&nbsp;constraints&nbsp;on&nbsp;the&nbsp;model&nbsp;and&nbsp;raises&nbsp;``ValidationError``<br>
+if&nbsp;any&nbsp;failed.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="django.db.models.base.html#Model">django.db.models.base.Model</a>:<br>
+<dl><dt><strong>pk</strong></dt>
+</dl>
+<hr>
+Data descriptors inherited from django.db.models.base.NewBase:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>unicode_literals</strong> = _Feature((2, 6, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 131072)</td></tr></table>
+</body></html>

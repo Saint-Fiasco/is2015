@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block styles %} <link href="{% static 'css/login.css' %}" rel="stylesheet"> {% endblock %}
+{% block left %}
+<div>
+    <div class="panel panel-default form-signin-panel">
+        {% if form.non_field_errors %}
+        <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+        {% endif %}
+        <div class="panel-body">
+            <form class="form-signin" role="form" autocomplete="on" method="post" action=".">
+                {% csrf_token %}
+
+                <h2 class="form-signin-heading">Iniciar Sesi&oacute;n</h2>
+
+                <div class="input-group" style=" margin-bottom: -1px;">
+                    <span id="icon-user" class="input-group-addon"><i class="glyphicon-user glyphicon"></i></span>
+                    <input name="username" id="id_username" type="text" class="form-control"
+                           oninvalid="setCustomValidity('Debe especificar su Nombre de Usuario.')"
+                           onchange="try{setCustomValidity('')}catch(e){}" placeholder="Usuario" required autofocus>
+                </div>
+                <div class="input-group">
+                    <span id="icon-lock" class="input-group-addon"><i class="glyphicon-lock glyphicon"></i></span>
+                    <input name="password" id="id_password" type="password" class="form-control"
+                           oninvalid="setCustomValidity('Debe especificar su Password.')"
+                           onchange="try{setCustomValidity('')}catch(e){}" placeholder="Password" required>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Recordar Usuario.
+                </label>
+                <input type="hidden" name="next" value="{{ next }}" />
+                <button class="btn btn-default btn-block" type="submit">Entrar&nbsp;<i class="glyphicon glyphicon-log-in"></i> </button>
+
+            </form>
+        </div>
+    </div>
+    <br>
+
+</div>
+{% endblock %}
+{% block titleContainer %}<h3>Bienvenido a la Aplicacion</h3>{% endblock %}
+{% block content %}
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-info-sign"></i><span style="padding-left: 10px">Por favor Inicie Sesi&oacute;n.</span>
+    </div>
+{% endblock %}

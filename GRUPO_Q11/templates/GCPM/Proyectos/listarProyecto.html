@@ -1,0 +1,259 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+    <link href="{% static 'css/listar.css' %}" rel="stylesheet"> {% endblock %}
+{% block titleContainer %}
+    <form action="." method="POST">
+        {% csrf_token %}
+        <label class="h4" for="id_query">Proyectos</label><a href="{% url 'adm.proyecto.crear' %}" class="btn btn-primary" style="margin-left:10px;padding-top: 4px;height: 30px">
+        <strong>Crear <i style="padding-top: 2px" class="glyphicon glyphicon-plus-sign"></i></strong></a>
+
+        <div class="input-group pull-right" style="width: 40%">
+
+            <input id="id_query" type="text" name="query" value="{{ query }}" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+        </div>
+        <button type="button" class="btn btn-default pull-right" data-toggle="collapse" href="#sort"><i
+                class="glyphicon glyphicon-sort"></i></button>
+        <div id="sort" hidden>
+            <div class="btn-group" data-toggle="buttons" style=";width: 100%">
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="nombre" value="nombre"> Nombre <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="fecha" value="fecha"> Fecha <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="costo" value="costo"> Costo <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="lider" value="lider"> Lider <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="sort" id="estado" value="estado"> Estado <i
+                        class="glyphicon glyphicon-sort"></i>
+                </label>
+
+                <div class="alert alert-info" style="margin-left: 10px;padding: 3px 10px 3px 3px;display: inline-flex">
+                    <i class="glyphicon glyphicon-info-sign" style="padding: 5px"></i> Seleccione una opcion y presione
+                    <i class="glyphicon glyphicon-search" style="padding: 5px"></i></div>
+
+            </div>
+
+        </div>
+        {#        <div class="input-group">#}
+        {#            <input id="id_query" type="text" name="query" class="form-control" value="{{  query }}">#}
+        {#            <span class="input-group-btn">#}
+        {#                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>#}
+        {#            </span>#}
+        {#        </div>#}
+    </form>
+{% endblock %}
+{% block content %}
+
+    <div class="task-list" id="tasks">
+        <ul class="list-group tasks">
+        <li class="list-group-item" data-user-id="{{ proyecto.id_proyecto }}"><a
+                                                                                                 class="pull-right"
+                                                                                                 style="width: 100px">
+                    <label class="description text-truncate">Estado</label>
+
+
+                </a>
+
+
+                    <a class="user pull-right small">
+                        Lider</a>
+                    <span class="text-truncate"
+                          style="padding-right: 10px;width: 15%"><strong>Nombre</strong></span>
+                            <span class="description text-truncate"
+                                  style="color: #808080; width: 35%; "> <strong>Descripcion</strong></span>
+                            <span class="description text-truncate  pull-right hidden-sm hidden-xs"
+                                  style="width: 15%;"> <strong>Costo</strong></span>
+                            <span class="description text-truncate pull-right hidden-sm hidden-xs hidden-md"
+                                  style="width: 18%;"> <strong> Fecha de Creacion</strong> </span>
+                </li>
+
+            {% for proyecto in proyectos %}
+                <li class="list-group-item proyect item-success" data-user-id="{{ proyecto.id_proyecto }}"><a href="#"
+                                                                                                 class="pull-right"
+                                                                                                 style="width: 100px">
+                    <label class="label label-success small">En Progreso</label>
+                    <i class="fa fa-times icon-muted glyphicon glyphicon-briefcase pull-right"
+                       style="padding-top: 5px"></i>
+
+                </a>
+
+
+                    <a href="profile.html"
+                       class="user pull-right small">
+                        {{ proyecto.lider }}</a>
+                    <span class="text-truncate"
+                          style="padding-right: 10px;width: 15%"><strong>{{ proyecto.nombre }}</strong></span>
+                            <span class="description text-truncate"
+                                  style="color: #808080; width: 35%; "> {{ proyecto.descripcion }}</span>
+                            <span class="description text-truncate  pull-right hidden-sm hidden-xs"
+                                  style="width: 15%; padding-left: 10px "> <strong></strong> {{ proyecto.costo }}</span>
+                            <span class="description text-truncate pull-right hidden-sm hidden-xs hidden-md"
+                                  style="width: 18%; padding-left: 10px "> <strong></strong> {{ proyecto.fecha }}</span>
+                </li>
+            {% endfor %}
+            {#                        <li class="list-group-item item-primary"><a href="#" class="pull-right" style="width: 100px">#}
+            {#                            <label class="label label-primary small">En progreso</label>#}
+            {#                            <i class="fa fa-times icon-muted glyphicon glyphicon-briefcase pull-right" style="padding-top: 5px"></i>#}
+            {##}
+            {#                            </a>#}
+            {##}
+            {##}
+            {#                            <a href="profile.html"#}
+            {#                               class="user pull-right small">#}
+            {#                                Julio Reyes</a>#}
+            {#                            <span class="text-truncate" style="padding-right: 10px;width: 15%"><strong>Proyecto 1</strong></span>#}
+            {#                            <span class="description text-truncate"#}
+            {#                                  style="color: #808080; width: 35%; "> Descripcion del proyecto suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuper largaaaaaaaaaaaaaaaaaaaaaaaaa</span>#}
+            {#                            <span class="description text-truncate  pull-right hidden-sm hidden-xs"#}
+            {#                                  style="width: 15%; padding-left: 10px "> <strong>Presupuesto:&nbsp;</strong> 1000$</span>#}
+            {#                            <span class="description text-truncate pull-right hidden-sm hidden-xs hidden-md"#}
+            {#                                  style="width: 18%; padding-left: 10px "> <strong>Fecha de Creacion:&nbsp; </strong> 10-10-2014</span>#}
+            {#                        </li>#}
+
+
+        </ul>
+    </div>
+    {##}
+    {##}
+    {#    <div class="row">#}
+    {##}
+    {#        <div class="well col-lg-12">#}
+    {#            <br>#}
+    {#            {% for proyecto in proyectos %}#}
+    {#                <div class="col-lg-12">#}
+    {#                    <div class="well well-user"#}
+    {#                         data-user-id="{{ proyecto.id_proyecto }}">#}
+    {#                        <form>#}
+    {#                            <div class="row">#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>{{ proyecto.nombre }}</strong></p>#}
+    {#                                </div>#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>Lider:</strong> {{ proyecto.lider }}</p>#}
+    {#                                </div>#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>Fecha de Creacion:</strong> {{ proyecto.fecha }}</p>#}
+    {#                                </div>#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>Costo:</strong> {{ proyecto.costo }} $</p>#}
+    {#                                </div>#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>Complejidad:</strong> {{ proyecto.complejidad }}</p>#}
+    {#                                </div>#}
+    {#                                <div class="col-lg-2">#}
+    {#                                    <p><strong>Descripcion:</strong> {{ proyecto.descripcion }}</p>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </form>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {##}
+    {#            {% empty %}#}
+    {#                <row>#}
+    {#                    <div class="center-block "><span class="lead text-center"></span></div>#}
+    {#                </row>#}
+    {#            {% endfor %}#}
+    {#        </div>#}
+    {#    </div>#}
+
+
+{% endblock %}
+
+{% block scripts %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery_1.11.0.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+        $(function () {
+
+            var $contextMenu = $("#contextMenu");
+            var $wellClicked;
+            $("body").on("click", ".list-group-item.proyect", function (e) {
+                $wellClicked = $(this)
+                $contextMenu.css({
+                    position: "absolute",
+                    display: "block",
+                    left: e.pageX,
+                    top: e.pageY,
+                    zIndex: 1000
+                });
+
+                $('.well-user-pressed').removeClass('well-user-pressed');
+                $wellClicked.addClass('well-user-pressed');
+                return false;
+            });
+            $("body").on("contextmenu", ".list-group-item.proyect", function (e) {
+                $wellClicked = $(this)
+                $contextMenu.css({
+                    position: "absolute",
+                    display: "block",
+                    left: e.pageX,
+                    top: e.pageY,
+                    zIndex: 1000
+                });
+
+                $('.well-user-pressed').removeClass('well-user-pressed');
+                $wellClicked.addClass('well-user-pressed');
+                return false;
+            });
+
+            $contextMenu.on("click", "a", function () {
+                //console.log("Clicked user: "+$wellClicked.attr('data-user-id'));
+                $contextMenu.hide();
+                $('.well-user-pressed').removeClass('well-user-pressed');
+            });
+
+            $(document).click(function () {
+                $contextMenu.hide();
+                $('.well-user-pressed').removeClass('well-user-pressed');
+            });
+
+        });
+    </script>{% endblock %}
+{% block contextMenu %}
+
+    <div id="contextMenu" class="dropdown clearfix" hidden>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"
+            style="display:block;position:static;margin-bottom:5px;">
+            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-info-sign text-info"></i> Consultar</a></li>
+            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-pencil text-primary"></i> Editar</a></li>
+            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-remove text-danger"></i> Eliminar</a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-user text-warning"></i> Asignar Comite</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="panel-footer">
+        <ul class="pager" style="margin: 0px">
+            {% if proyectos.has_previous %}
+                <li class=""><a href="?page={{ proyectos.previous_page_number }}">Anterior</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Anterior</a></li>
+            {% endif %}
+            <li>&nbsp;Pagina {{ proyectos.number }} de {{ proyectos.paginator.num_pages }}&nbsp;</li>
+            {% if proyectos.has_next %}
+                <li class=" "><a href="?page={{ proyectos.next_page_number }}">Siguiente</a></li>
+            {% else %}
+                <li class="disabled"><a href="#">Siguiente</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}

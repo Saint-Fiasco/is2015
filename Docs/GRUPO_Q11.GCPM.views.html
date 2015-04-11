@@ -1,0 +1,109 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module GRUPO_Q11.GCPM.views</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="GRUPO_Q11.html"><font color="#ffffff">GRUPO_Q11</font></a>.<a href="GRUPO_Q11.GCPM.html"><font color="#ffffff">GCPM</font></a>.views</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/julio/PycharmProjects/is2_2014/GRUPO_Q11/GCPM/views.py">/home/julio/PycharmProjects/is2_2014/GRUPO_Q11/GCPM/views.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="GRUPO_Q11.html">GRUPO_Q11</a><br>
+</td><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-asignar_permisos"><strong>asignar_permisos</strong></a>(request, *args, **kwargs)</dt><dd><tt>Asignar&nbsp;permisos&nbsp;a&nbsp;un&nbsp;rol.<br>
+:param&nbsp;id_rol:&nbsp;rol&nbsp;a&nbsp;asignar<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Se&nbsp;recibe&nbsp;el&nbsp;id&nbsp;del&nbsp;rol&nbsp;como&nbsp;parametro.</tt></dd></dl>
+ <dl><dt><a name="-asignar_rol_usuario"><strong>asignar_rol_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>Asignar&nbsp;Roles&nbsp;a&nbsp;un&nbsp;Usuario<br>
+:param&nbsp;id_usuario:&nbsp;usuario&nbsp;a&nbsp;asignar<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+ASigna&nbsp;multiples&nbsp;roles&nbsp;a&nbsp;un&nbsp;usuario&nbsp;mediante&nbsp;la&nbsp;sellecion&nbsp;de&nbsp;los&nbsp;mismos&nbsp;por&nbsp;medio&nbsp;de&nbsp;una&nbsp;lista&nbsp;de&nbsp;roles</tt></dd></dl>
+ <dl><dt><a name="-consultar_rol"><strong>consultar_rol</strong></a>(request, *args, **kwargs)</dt><dd><tt>Consultar&nbsp;un&nbsp;usuario<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_usuario:&nbsp;id&nbsp;del&nbsp;usuario&nbsp;a&nbsp;Consultar</tt></dd></dl>
+ <dl><dt><a name="-consultar_usuario"><strong>consultar_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>Consultar&nbsp;un&nbsp;usuario<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_usuario:&nbsp;id&nbsp;del&nbsp;usuario&nbsp;a&nbsp;Consultar</tt></dd></dl>
+ <dl><dt><a name="-crear_proyecto"><strong>crear_proyecto</strong></a>(request, *args, **kwargs)</dt><dd><tt>Vista&nbsp;del&nbsp;formulario&nbsp;de&nbsp;creacion&nbsp;de&nbsp;proyectos&nbsp;'forms.py'<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Permite&nbsp;crer&nbsp;proyectos&nbsp;a&nbsp;travez&nbsp;de&nbsp;un&nbsp;frmulario&nbsp;con&nbsp;los&nbsp;sigueintes&nbsp;campos<br>
++Nombree<br>
++Descripcion<br>
+Setea&nbsp;los&nbsp;demas&nbsp;valor&nbsp;requeridos&nbsp;por&nbsp;el&nbsp;proyecto&nbsp;por&nbsp;default</tt></dd></dl>
+ <dl><dt><a name="-crear_rol"><strong>crear_rol</strong></a>(request, *args, **kwargs)</dt><dd><tt>Vista&nbsp;del&nbsp;formulario&nbsp;de&nbsp;creacion&nbsp;de&nbsp;roles.&nbsp;Ver&nbsp;forms.py<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Permite&nbsp;crear&nbsp;Roles&nbsp;a&nbsp;partir&nbsp;de&nbsp;un&nbsp;formulario&nbsp;con&nbsp;los&nbsp;siguientes&nbsp;campos<br>
++Nombre<br>
++Descripcion</tt></dd></dl>
+ <dl><dt><a name="-crear_usuario"><strong>crear_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>Vista&nbsp;del&nbsp;formulario&nbsp;de&nbsp;creacion&nbsp;de&nbsp;usuarios&nbsp;'forms.py'<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Permite&nbsp;crear&nbsp;usuarios&nbsp;por&nbsp;medio&nbsp;de&nbsp;un&nbsp;formulario&nbsp;con&nbsp;siguientes&nbsp;campos<br>
++Nombre&nbsp;Usuario<br>
++Password<br>
++Nombre<br>
++Apellido<br>
++Telefono<br>
++Documento</tt></dd></dl>
+ <dl><dt><a name="-eliminar_rol"><strong>eliminar_rol</strong></a>(request, *args, **kwargs)</dt><dd><tt>eliminar&nbsp;un&nbsp;rol<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_rol:&nbsp;id&nbsp;del&nbsp;rol&nbsp;a&nbsp;eliminar<br>
+la&nbsp;eliminacion&nbsp;es&nbsp;logica</tt></dd></dl>
+ <dl><dt><a name="-eliminar_usuario"><strong>eliminar_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>eliminar&nbsp;un&nbsp;usuario<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_usuario:&nbsp;id&nbsp;del&nbsp;usuario&nbsp;a&nbsp;eliminar<br>
+la&nbsp;eliminacion&nbsp;es&nbsp;logica</tt></dd></dl>
+ <dl><dt><a name="-home"><strong>home</strong></a>(request, *args, **kwargs)</dt><dd><tt>Menu&nbsp;principal&nbsp;de&nbsp;de&nbsp;la&nbsp;aplicacion&nbsp;en&nbsp;el&nbsp;cual&nbsp;se&nbsp;accede&nbsp;desde&nbsp;el&nbsp;loguin</tt></dd></dl>
+ <dl><dt><a name="-listar_permisos"><strong>listar_permisos</strong></a>(request, *args, **kwargs)</dt><dd><tt>Lista&nbsp;de&nbsp;permisos<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Despliega&nbsp;los&nbsp;permisos&nbsp;y&nbsp;sus&nbsp;atributos<br>
++Nombre<br>
++Descripcion</tt></dd></dl>
+ <dl><dt><a name="-listar_proyecto"><strong>listar_proyecto</strong></a>(request, *args, **kwargs)</dt><dd><tt>Lista&nbsp;de&nbsp;proyecto<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Despliega&nbsp;lso&nbsp;proyecctos&nbsp;con&nbsp;sus&nbsp;atributos<br>
++Nombre<br>
++Descripcion<br>
++Feha&nbsp;Creacion<br>
++Costo<br>
++Lider<br>
++Estado</tt></dd></dl>
+ <dl><dt><a name="-listar_rol"><strong>listar_rol</strong></a>(request, *args, **kwargs)</dt><dd><tt>Lista&nbsp;de&nbsp;roles<br>
+:param&nbsp;request:<br>
+Despliega&nbsp;los&nbsp;roles&nbsp;y&nbsp;sus&nbsp;atributos:<br>
++Nombre<br>
++Descripcion</tt></dd></dl>
+ <dl><dt><a name="-listar_usuario"><strong>listar_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>Lista&nbsp;de&nbsp;usuarios<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+Despliega&nbsp;los&nbsp;usuarios&nbsp;y&nbsp;sus&nbsp;datos:<br>
++Nombre&nbsp;Usuario<br>
++Nombre<br>
++Apellido<br>
++Documento<br>
++Telefono</tt></dd></dl>
+ <dl><dt><a name="-logout_view"><strong>logout_view</strong></a>(request, *args, **kwargs)</dt></dl>
+ <dl><dt><a name="-modificar_rol"><strong>modificar_rol</strong></a>(request, *args, **kwargs)</dt><dd><tt>Modificar&nbsp;un&nbsp;usuario<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_usuario:&nbsp;id&nbsp;del&nbsp;usuario&nbsp;a&nbsp;modificar</tt></dd></dl>
+ <dl><dt><a name="-modificar_usuario"><strong>modificar_usuario</strong></a>(request, *args, **kwargs)</dt><dd><tt>Modificar&nbsp;un&nbsp;usuario<br>
+:param&nbsp;request:&nbsp;http&nbsp;request<br>
+:param&nbsp;id_usuario:&nbsp;id&nbsp;del&nbsp;usuario&nbsp;a&nbsp;modificar</tt></dd></dl>
+ <dl><dt><a name="-usuarioRol"><strong>usuarioRol</strong></a>(request, *args, **kwargs)</dt></dl>
+</td></tr></table>
+</body></html>
